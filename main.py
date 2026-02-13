@@ -1,4 +1,4 @@
-# Ponto inicial do sistema
+# Ponto de entrada do sistema
 
 from fastapi import FastAPI
 
