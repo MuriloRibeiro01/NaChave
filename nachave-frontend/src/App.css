@@ -44,3 +44,20 @@
 .campo-login {
   background-color: aqua;
 }
+
+/* Área do menu */
+.container { padding: 10px; }
+.grande { padding: 40px; }
+.cinca { color: grey; }
+
+/* Botões */
+.main-button {
+  background-color: #0d6efd;
+  color: #fff;
+
+}
+
+.secundary-button {
+  background-color: #6c757d;
+  color: #fff;
+}

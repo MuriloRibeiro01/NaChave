@@ -1,11 +1,15 @@
 // Um compomente é uma função js que retorna um markup
 
-function MyButton() {
+export function MainButton(props) {
     return (
-        <button>Teste</button>
+        <button className="main-button">
+            {props.children}
+        </button>
     );
 }
 
-// Como personalizar o botão? Construtor?
-
-export default MyButton;
+export function SecondaryButton() {
+    return (
+        <button className="secondary-button"></button>
+    );    
+}

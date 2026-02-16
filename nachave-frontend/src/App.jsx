@@ -2,9 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import MyButton from './components/Button';
+import {MainButton, SecondaryButton} from './components/Button';
 import MeuInput from './components/Input'
-import MenuLogin from './components/MenuLogin'
+import {MenuInput} from './components/MenuLogin'
 
 // Componente que irá ser renderizada no "body" do index.html
 function App() {
@@ -17,17 +17,14 @@ function App() {
   return (
     <>
       <div className='campo-login'>
-        <MenuLogin />
+        <MenuInput/>
       </div>
       <div className="card">
-        <MeuInput />
-        <MyButton />        
+        <MeuInput />       
       </div>
       <hr />
       <div>
-        <MyButton />
-        <MyButton />
-        <MyButton />
+        <MainButton>Teste</MainButton>
       </div>
       
     </>

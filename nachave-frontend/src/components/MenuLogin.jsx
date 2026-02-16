@@ -1,28 +1,18 @@
-function MenuInput() {
+import {MainButton, SecondaryButton} from './Button';
+
+export function MenuInput() {
     return (
         <div>
             <InputLogin />
-            <div className="botao-login">
-                <BotaoLogin />
+            <div>
+                <button className='main-button'>Login</button>
             </div>
-        </div>
-                
+        </div>                
     );
 }
 
-function BotaoLogin() {
-    const EstiloBotao = {
-        color: "green"
-    };
-    return (
-        <button>Login</button>
-    );
-}
-
-function InputLogin() {
+export function InputLogin() {
     return (
         <input type="text" placeholder="Usuario" />
     );
 }
-
-export default MenuInput;

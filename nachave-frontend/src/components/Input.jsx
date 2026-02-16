@@ -2,7 +2,7 @@
 
 function MeuInput() {
     return (
-        <input type="text" placeholder="pintão" />
+        <input type="text" placeholder="text" />
     );
 }
 
