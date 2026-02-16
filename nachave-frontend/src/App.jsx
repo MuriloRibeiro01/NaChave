@@ -19,16 +19,13 @@ function App() {
       <div className='campo-login'>
         <MenuInput/>
       </div>
-      <div className="card">
-        <MeuInput />       
-      </div>
-      <hr />
-      <div>
-        <MainButton>Teste</MainButton>
-      </div>
-      
+      <hr />      
     </>
   )
 }
 
 export default App
+
+// No momento, o App.jsx está sendo usado para estudos e testes.
+// Futuramente, ele será usado com o devido propósito de coordenar o sistema.
+// Nele conterá: Rotas, Provedores de Contexto, Layout Persistente.
