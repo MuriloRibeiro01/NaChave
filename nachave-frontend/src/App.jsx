@@ -5,21 +5,34 @@ import './App.css'
 import {MainButton, SecondaryButton} from './components/Button';
 import MeuInput from './components/Input'
 import {MenuInput} from './components/MenuLogin'
+import { NavBar } from './components/Navbar';
+import Teste from './views/Teste'
+import Footer from './components/Footer'
+import Header from './components/Header'
+import { Routes, Route } from 'react-router-dom';
+import { Feed } from './views/Feed';
+import { Login } from './views/Login';
 
 // Componente que irá ser renderizada no "body" do index.html
 function App() {
   const [count, setCount] = useState(0)
 
-  const CorBotao = {
-    color: "white"
-  };
-
   return (
     <>
-      <div className='campo-login'>
-        <MenuInput/>
-      </div>
-      <hr />      
+      <div className='app-container'>
+        <Header />
+
+        <main className='content'>
+          <Routes>
+            <Route path="/" element={<Feed />} />
+            <Route path="/Login" element={<Login />} />
+            <Route path="/Teste" element={<Teste />} />
+          </Routes>
+        </main>        
+
+        <Footer />
+        <NavBar />
+      </div>  
     </>
   )
 }
