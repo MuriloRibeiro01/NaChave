@@ -3,8 +3,7 @@ function Teste() {
         <div>
             <h1>Área de testes</h1>
             <p>And yet I fight</p>
-        </div>
-        
+        </div>        
     );
 }
 
