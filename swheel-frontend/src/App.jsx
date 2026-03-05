@@ -1,6 +1,3 @@
-import { useState }       from 'react'
-import reactLogo          from './assets/react.svg'
-import viteLogo           from '/vite.svg'
 import './App.css'      
 import { NavBar }         from './components/Navbar';
 import Teste              from './views/Teste'
@@ -12,7 +9,6 @@ import { Login }          from './views/Login';
 
 // Componente que irá ser renderizada no "body" do index.html
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -25,8 +21,8 @@ function App() {
             <Route path="/Login"  element={<Login />} />
             <Route path="/Teste"  element={<Teste />} />
           </Routes>
-        </main>        
-
+        </main>
+        
         <Footer />
         <NavBar />
       </div>  
